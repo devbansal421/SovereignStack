@@ -142,9 +142,13 @@ To ensure immediate, zero-latency evaluation, SovereignStack includes verified r
 
 ---
 # Team
-Krish Maheshwari
-Samarth Agor
-Tilak Jha
+
+| Member | Role | Contribution Area |
+|---|---|---|
+| Dev Bansal | Team Leader | Project direction, architecture, deployment, and integration |
+| Krish Maheshwari | Frontend Developer | React dashboard, visualisations, and user experience |
+| Samarth Agor | Backend Developer | Express APIs, audit services, and data-processing logic |
+| Tilak Jha | Research & Compliance Analyst | DPDP research, risk framework, and documentation |
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
