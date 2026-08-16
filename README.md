@@ -115,6 +115,7 @@ To ensure immediate, zero-latency evaluation, SovereignStack includes verified r
 ---
 # Team
 Krish Maheshwari
+Samarth Agor
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
