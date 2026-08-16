@@ -91,6 +91,34 @@ npm run dev
 
 ---
 
+## Deploy On Vercel
+
+SovereignStack is configured for Vercel multi-service deployment using the root [`vercel.json`](./vercel.json):
+
+- `frontend` service: Vite app in `frontend/`
+- `backend` service: Express API in `backend/`
+- `rewrites`: `/api/*` -> backend, everything else -> frontend
+
+### Vercel Project Settings
+
+- **Project Name**: `sovereignstack` (or your preferred name)
+- **Framework Preset**: `Other`
+- **Root Directory**: `.`
+- **Build Command**: leave empty (Vercel reads per-service defaults)
+- **Output Directory**: leave empty
+- **Install Command**: leave empty
+
+### Required Environment Variables
+
+Add these in Vercel for all environments (Production/Preview/Development):
+
+- `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=true`
+- `NODE_ENV=production`
+
+`PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD` prevents large browser binary downloads during backend install. If Playwright browser launch is unavailable at runtime, the backend already falls back to HTTP-based telemetry inspection.
+
+---
+
 ## 📊 Pre-Warmed Showcases Included
 
 To ensure immediate, zero-latency evaluation, SovereignStack includes verified reference datasets for major Indian digital platforms:
