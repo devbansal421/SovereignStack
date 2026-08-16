@@ -113,7 +113,8 @@ To ensure immediate, zero-latency evaluation, SovereignStack includes verified r
   - [ADR 0005: Full-Stack Monorepo Architecture](./docs/adr/0005-full-stack-monorepo-and-geospatial-visualization.md)
 
 ---
-
+# Team
+Krish Maheshwari
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
