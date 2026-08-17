@@ -22,6 +22,7 @@ import DataFlowsTable from './components/DataFlowsTable.jsx';
 import SupplyChainGraph from './components/SupplyChainGraph.jsx';
 import SovereigntyCopilot from './components/SovereigntyCopilot.jsx';
 import PreWarmedSelector from './components/PreWarmedSelector.jsx';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dataflow'); // 'dataflow' | 'supplychain'
@@ -110,7 +111,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-obsidian-950 text-slate-100 flex flex-col telemetry-grid">
+    <>
+      <div className="min-h-screen bg-obsidian-950 text-slate-100 flex flex-col telemetry-grid">
       <Navbar 
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
@@ -249,6 +251,8 @@ export default function App() {
           <span className="text-slate-400">Strictly Localized • No External Telemetry Exfiltration</span>
         </div>
       </footer>
-    </div>
+      </div>
+      <Analytics />
+    </>
   );
 }
